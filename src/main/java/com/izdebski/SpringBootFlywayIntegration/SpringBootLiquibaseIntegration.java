@@ -8,13 +8,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootFlywayIntegrationApplication implements CommandLineRunner {
+public class SpringBootLiquibaseIntegration implements CommandLineRunner {
 
 	@Autowired
 	private EmployeeRepository employeeRepository;
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootFlywayIntegrationApplication.class, args);
+		SpringApplication.run(SpringBootLiquibaseIntegration.class, args);
 	}
 	@Override
 	public void run(String... args) throws Exception {
